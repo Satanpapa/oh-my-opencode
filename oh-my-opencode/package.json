@@ -1,0 +1,51 @@
+{
+  "name": "oh-my-opencode",
+  "version": "1.0.0",
+  "description": "Multi-agent orchestration for OpenCode. 5 execution modes, 13 specialized agents, zero learning curve.",
+  "main": "dist/plugins/oh-my-opencode.js",
+  "types": "dist/plugins/oh-my-opencode.d.ts",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "ai-agents",
+    "multi-agent",
+    "orchestration",
+    "autopilot",
+    "claude"
+  ],
+  "author": "YOUR_NAME",
+  "license": "MIT",
+  "homepage": "https://github.com/YOUR_USERNAME/oh-my-opencode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/oh-my-opencode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/oh-my-opencode/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "install-omc": "node scripts/install.js",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=0.1.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "latest",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/",
+    "agents/",
+    "skills/",
+    "commands/",
+    "AGENTS.md",
+    "scripts/"
+  ],
+  "opencode": {
+    "plugin": true,
+    "entry": "dist/plugins/oh-my-opencode.js"
+  }
+}
